@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PInvoke.Crypt32</name>
+    </assembly>
+    <members>
+        <member name="T:PInvoke.Crypt32">
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.CertCloseStoreFlags"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.CERT_PROP_ID"/> nested type.
+            </content>
+            <content>Contains the <see cref="T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags" /> nested type.</content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.CRYPT_DATA_BLOB"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.CRYPT_PROV_TYPE"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.PFXImportCertStoreFlags"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref="T:PInvoke.Crypt32.SafeCertStoreHandle"/> nested type.
+            </content>
+            <summary>
+            Exported functions from the Crypt32.dll Windows library
+            that are available to Desktop and Store apps.
+            </summary>
+            <content>
+            Methods and nested types that are not strictly P/Invokes but provide
+            a slightly higher level of functionality to ease calling into native code.
+            </content>
+            <content>
+            Exported functions from the Crypt32.dll Windows library
+            that are available to Desktop apps only.
+            </content>
+            <content>
+            Methods and nested types that are not strictly P/Invokes but provide
+            a slightly higher level of functionality to ease calling into native code.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.CertCloseStoreFlags"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.CERT_PROP_ID"/> nested type.
+            </content>
+            <content>Contains the <see cref = "T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags"/> nested type.</content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.CRYPT_DATA_BLOB"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.CRYPT_PROV_TYPE"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.PFXImportCertStoreFlags"/> nested type.
+            </content>
+            <content>
+            Contains the <see cref = "T:PInvoke.Crypt32.SafeCertStoreHandle"/> nested type.
+            </content>
+            <summary>
+            Exported functions from the Crypt32.dll Windows library
+            that are available to Desktop and Store apps.
+            </summary>
+            <content>
+            Methods and nested types that are not strictly P/Invokes but provide
+            a slightly higher level of functionality to ease calling into native code.
+            </content>
+            <content>
+            Exported functions from the Crypt32.dll Windows library
+            that are available to Desktop apps only.
+            </content>
+            <content>
+            Methods and nested types that are not strictly P/Invokes but provide
+            a slightly higher level of functionality to ease calling into native code.
+            </content>
+        </member>
+        <member name="T:PInvoke.Crypt32.CertCloseStoreFlags">
+            <summary>
+            Flags for the <see cref="M:PInvoke.Crypt32.CertCloseStore(System.IntPtr,PInvoke.Crypt32.CertCloseStoreFlags)"/> method.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CertCloseStoreFlags.None">
+            <summary>
+            The default is to close the store with memory remaining allocated for contexts that have not been freed. In this case, no check is made to determine whether memory for contexts remains allocated.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CertCloseStoreFlags.CERT_CLOSE_STORE_FORCE_FLAG">
+            <summary>
+            Forces the freeing of memory for all contexts associated with the store. This flag can be safely used only when the store is opened in a function and neither the store handle nor any of its contexts are passed to any called functions. For details, see Remarks.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CertCloseStoreFlags.CERT_CLOSE_STORE_CHECK_FLAG">
+            <summary>
+            Checks for nonfreed certificate, CRL, and CTL contexts. A returned error code indicates that one or more store elements is still in use. This flag should only be used as a diagnostic tool in the development of applications.
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.CERT_PROP_ID">
+            <summary>
+            Certificate property identifiers.
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags">
+            <summary>
+            Defines the flags for <see cref="M:PInvoke.Crypt32.CryptAcquireCertificatePrivateKey(System.IntPtr,PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags,System.IntPtr,System.IntPtr@,System.UInt32@,System.Boolean@)"/> API as documented by https://msdn.microsoft.com/en-us/library/windows/desktop/aa379885(v=vs.85).aspx
+            Flag values defined in the Platform SDK wincrypt.h
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.CRYPT_DATA_BLOB">
+            <summary>
+            A structure that contains an arbitrary array of bytes. The structure definition includes aliases appropriate to the various functions that use it.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_DATA_BLOB.cbData">
+            <summary>
+            A DWORD variable that contains the count, in bytes, of data.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_DATA_BLOB.pbData">
+            <summary>
+            A pointer to the data buffer.
+            </summary>
+        </member>
+        <member name="P:PInvoke.Crypt32.CRYPT_DATA_BLOB.pbData_IntPtr">
+            <summary>
+            A pointer to the data buffer.
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO">
+            <summary>
+            The CRYPT_KEY_PROV_INFO structure contains information about a key container within a cryptographic service provider (CSP).
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.pwszContainerName">
+            <summary>
+            A pointer to a null-terminated Unicode string that contains the name of the key container.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.pwszProvName">
+            <summary>
+            A pointer to a null-terminated Unicode string that contains the name of the CSP.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.dwProvType">
+            <summary>
+            Specifies the CSP type.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.dwFlags">
+            <summary>
+            A set of flags that indicate additional information about the provider.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.cProvParam">
+            <summary>
+            The number of elements in the <see cref="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.rgProvParam"/> array.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.rgProvParam">
+            <summary>
+            An array of CRYPT_KEY_PROV_PARAM structures that contain the parameters for the key container
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.dwKeySpec">
+            <summary>
+            The specification of the private key to retrieve.
+            </summary>
+        </member>
+        <member name="P:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.ContainerName">
+            <summary>
+            Gets the name of the key container.
+            </summary>
+        </member>
+        <member name="P:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.ProvName">
+            <summary>
+            Gets the name of the CSP.
+            </summary>
+        </member>
+        <member name="P:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.pwszContainerName_IntPtr">
+            <summary>
+            A pointer to a null-terminated Unicode string that contains the name of the key container.
+            </summary>
+        </member>
+        <member name="P:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO.pwszProvName_IntPtr">
+            <summary>
+            A pointer to a null-terminated Unicode string that contains the name of the CSP.
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.PFXImportCertStoreFlags">
+            <summary>
+            Option flags for the <see cref="M:PInvoke.Crypt32.PFXImportCertStore(PInvoke.Crypt32.CRYPT_DATA_BLOB@,System.String,PInvoke.Crypt32.PFXImportCertStoreFlags)"/> method.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.None">
+            <summary>
+            No flags.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.CRYPT_EXPORTABLE">
+            <summary>
+            Imported keys are marked as exportable. If this flag is not used, calls to the CryptExportKey function with the key handle fail.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.CRYPT_USER_PROTECTED">
+            <summary>
+            The user is to be notified through a dialog box or other method when certain attempts to use this key are made. The precise behavior is specified by the cryptographic service provider (CSP) being used.
+            Prior to Internet Explorer 4.0, Microsoft cryptographic service providers ignored this flag. Starting with Internet Explorer 4.0, Microsoft providers support this flag.
+            If the provider context was opened with the CRYPT_SILENT flag set, using this flag causes a failure and the last error is set to NTE_SILENT_CONTEXT.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.CRYPT_MACHINE_KEYSET">
+            <summary>
+            The private keys are stored under the local computer and not under the current user.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.CRYPT_USER_KEYSET">
+            <summary>
+            The private keys are stored under the current user and not under the local computer even if the PFX BLOB specifies that they should go into the local computer.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.PKCS12_PREFER_CNG_KSP">
+            <summary>
+            Indicates that the CNG key storage provider (KSP) is preferred. If the CSP is specified in the PFX file, then the CSP is used, otherwise the KSP is preferred. If the CNG KSP is unavailable, the PFXImportCertStore function will fail.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.PKCS12_ALWAYS_CNG_KSP">
+            <summary>
+            Indicates that the CNG KSP is always used. When specified, PFXImportCertStore attempts to use the CNG KSP irrespective of provider information in the PFX file. If the CNG KSP is unavailable, the import will not fail.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.PKCS12_ALLOW_OVERWRITE_KEY">
+            <summary>
+            Allow overwrite of the existing key. Specify this flag when you encounter a scenario in which you must import a PFX file that contains a key name that already exists. For example, when you import a PFX file, it is possible that a container of the same name is already present because there is no unique namespace for key containers. If you have created a "TestKey" on your computer, and then you import a PFX file that also has "TestKey" as the key container, the PKCS12_ALLOW_OVERWRITE_KEY setting allows the key to be overwritten.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.PKCS12_NO_PERSIST_KEY">
+            <summary>
+            Do not persist the key. Specify this flag when you do not want to persist the key. For example, if it is not necessary to store the key after verification, then instead of creating a container and then deleting it, you can specify this flag to dispose of the key immediately.
+            Note  If the PKCS12_NO_PERSIST_KEY flag is not set, keys are persisted on disk. If you do not want to persist the keys beyond their usage, you must delete them by calling the CryptAcquireContext function with the CRYPT_DELETEKEYSET flag set in the dwFlags parameter.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.PKCS12_INCLUDE_EXTENDED_PROPERTIES">
+            <summary>
+            Import all extended properties on the certificate that were saved on the certificate when it was exported.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.PFXImportCertStoreFlags.UnnamedValue">
+            <summary>
+            Unpack but do not persist the results.
+            </summary>
+        </member>
+        <member name="T:PInvoke.Crypt32.SafeCertStoreHandle">
+            <summary>
+            A safe handle for certificate stores.
+            </summary>
+        </member>
+        <member name="F:PInvoke.Crypt32.SafeCertStoreHandle.Null">
+            <summary>
+            A handle that may be used in place of <see cref="F:System.IntPtr.Zero"/>.
+            </summary>
+        </member>
+        <member name="M:PInvoke.Crypt32.SafeCertStoreHandle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PInvoke.Crypt32.SafeCertStoreHandle"/> class.
+            </summary>
+        </member>
+        <member name="M:PInvoke.Crypt32.SafeCertStoreHandle.#ctor(System.IntPtr,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PInvoke.Crypt32.SafeCertStoreHandle"/> class.
+            </summary>
+            <param name="preexistingHandle">An object that represents the pre-existing handle to use.</param>
+            <param name="ownsHandle">
+                <see langword="true" /> to have the native handle released when this safe handle is disposed or finalized;
+                <see langword="false" /> otherwise.
+            </param>
+        </member>
+        <member name="P:PInvoke.Crypt32.SafeCertStoreHandle.IsInvalid">
+            <inheritdoc />
+        </member>
+        <member name="M:PInvoke.Crypt32.SafeCertStoreHandle.ReleaseHandle">
+            <inheritdoc />
+        </member>
+        <member name="F:PInvoke.Crypt32.CERT_NCRYPT_KEY_SPEC">
+            <summary>
+            The key is a CNG key.
+            Windows Server 2003 and Windows XP:  This value is not supported.
+            </summary>
+        </member>
+        <member name="M:PInvoke.Crypt32.PFXImportCertStore(PInvoke.Crypt32.CRYPT_DATA_BLOB@,System.String,PInvoke.Crypt32.PFXImportCertStoreFlags)">
+            <summary>
+            The PFXImportCertStore function imports a PFX BLOB and returns the handle of a store that contains certificates and any associated private keys.
+            </summary>
+            <param name="pPFX">A pointer to a <see cref="T:PInvoke.Crypt32.CRYPT_DATA_BLOB"/> structure that contains a PFX packet with the exported and encrypted certificates and keys.</param>
+            <param name="szPassword">
+            A string password used to decrypt and verify the PFX packet. Whether set to a string of length greater than zero or set to an empty string or to NULL, this value must be exactly the same as the value that was used to encrypt the packet.
+            Beginning with Windows 8 and Windows Server 2012, if the PFX packet was created in the PFXExportCertStoreEx function by using the PKCS12_PROTECT_TO_DOMAIN_SIDS flag, the PFXImportCertStore function attempts to decrypt the password by using the Active Directory (AD) principal that was used to encrypt it. The AD principal is specified in the pvPara parameter. If the szPassword parameter in the PFXExportCertStoreEx function was an empty string or NULL and the dwFlags parameter was set to PKCS12_PROTECT_TO_DOMAIN_SIDS, that function randomly generated a password and encrypted it to the AD principal specified in the pvPara parameter. In that case you should set the password to the value, empty string or NULL, that was used when the PFX packet was created. The PFXImportCertStore function will use the AD principal to decrypt the random password, and the randomly generated password will be used to decrypt the PFX certificate.
+            When you have finished using the password, clear it from memory by calling the SecureZeroMemory function. For more information about protecting passwords, see Handling Passwords.
+            </param>
+            <param name="dwFlags">This parameter can be one of the following values.</param>
+            <returns>
+            If the function succeeds, the function returns a handle to a certificate store that contains the imported certificates, including available private keys.
+            If the function fails, that is, if the password parameter does not contain an exact match with the password used to encrypt the exported packet or if there were any other problems decoding the PFX BLOB, the function returns NULL, and an error code can be found by calling the GetLastError function.
+            </returns>
+        </member>
+        <member name="M:PInvoke.Crypt32.CertGetCertificateContextProperty(System.IntPtr,PInvoke.Crypt32.CERT_PROP_ID,System.Void*,System.Int32@)">
+            <summary>
+            The CertGetCertificateContextProperty function retrieves the information contained in an extended property of a certificate context.
+            </summary>
+            <param name="pCertContext">A pointer to the CERT_CONTEXT structure of the certificate that contains the property to be retrieved.</param>
+            <param name="dwPropId">The property to be retrieved.</param>
+            <param name="pvData">
+            A pointer to a buffer to receive the data as determined by dwPropId
+            Structures pointed to by members of a structure returned are also returned following the base structure. Therefore, the size contained in pcbData often exceeds the size of the base structure.
+            </param>
+            <param name="pcbData">
+            A pointer to a DWORD value that specifies the size, in bytes, of the buffer pointed to by the pvData parameter.
+            When the function returns, the DWORD value contains the number of bytes to be stored in the buffer.
+            </param>
+            <returns>
+            If the function succeeds, the function returns TRUE.
+            If the function fails, it returns FALSE.
+            </returns>
+        </member>
+        <member name="M:PInvoke.Crypt32.CryptAcquireCertificatePrivateKey(System.IntPtr,PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags,System.Void*,System.IntPtr@,System.UInt32@,System.Boolean@)">
+            <summary>
+            Obtains the private key for a certificate. This function is used to obtain access to a user's private key when the user's certificate is available, but the handle of the user's key container is not available. This function can only be used by the owner of a private key and not by any other user.
+            If a CSP handle and the key container containing a user's private key are available, the CryptGetUserKey function should be used instead.
+            </summary>
+            <param name="pCert">The address of a CERT_CONTEXT structure that contains the certificate context for which a private key will be obtained.</param>
+            <param name="dwFlags">A set of flags that modify the behavior of this function. This can be zero or a combination of one or more of <see cref="T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags"/> values.</param>
+            <param name="pvParameters">
+            If the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is set, then this is the address of an HWND. If the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is not set, then this parameter must be NULL.
+            Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  This parameter was named pvReserved and reserved for future use and must be NULL.
+            </param>
+            <param name="phCryptProvOrNCryptKey">
+            The address of an HCRYPTPROV_OR_NCRYPT_KEY_HANDLE variable that receives the handle of either the CryptoAPI provider or the CNG key. If the <paramref name="pdwKeySpec"/> variable receives the <see cref="F:PInvoke.Crypt32.CERT_NCRYPT_KEY_SPEC"/> flag, this is a CNG key handle of type NCRYPT_KEY_HANDLE; otherwise, this is a CryptoAPI provider handle of type HCRYPTPROV.
+            For more information about when and how to release this handle, see the description of the pfCallerFreeProvOrNCryptKey parameter.
+            </param>
+            <param name="pdwKeySpec">The address of a DWORD variable that receives additional information about the key.</param>
+            <param name="pfCallerFreeProvOrNCryptKey">
+            The address of a BOOL variable that receives a value that indicates whether the caller must free the handle returned in the <paramref name="phCryptProvOrNCryptKey"/> variable.
+            This receives FALSE if any of the following is true:
+            - Public key acquisition or comparison fails.
+            - The <paramref name="dwFlags"/> parameter contains the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_CACHE_FLAG"/> flag.
+            - The <paramref name="dwFlags"/> parameter contains the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_USE_PROV_INFO_FLAG"/> flag, the certificate context property is set to <see cref="F:PInvoke.Crypt32.CERT_PROP_ID.CERT_KEY_PROV_INFO_PROP_ID"/> with the <see cref="T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> structure, and the <paramref name="dwFlags"/> member of the <see cref="T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> structure is set to CERT_SET_KEY_CONTEXT_PROP_ID.
+            If this variable receives FALSE, the calling application must not release the handle returned in the <paramref name="phCryptProvOrNCryptKey"/> variable.
+            The handle will be released on the last free action of the certificate context.
+            If this variable receives TRUE, the caller is responsible for releasing the handle returned in the <paramref name="phCryptProvOrNCryptKey"/> variable.
+            If the <paramref name="pdwKeySpec"/> variable receives the <see cref="F:PInvoke.Crypt32.CERT_NCRYPT_KEY_SPEC"/> flag, the handle must be released by passing it to the NCryptFreeObject function;
+            otherwise, the handle is released by passing it to the CryptReleaseContext function.
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero.
+            </returns>
+            <devremarks>
+            This is private because it returns an <see cref="T:System.IntPtr"/> for the handle
+            and we don't expose the release methods publicly.
+            A helper method strongly types it as either of two <see cref="T:System.Runtime.InteropServices.SafeHandle"/> types.
+            </devremarks>
+        </member>
+        <member name="M:PInvoke.Crypt32.CertCloseStore(System.IntPtr,PInvoke.Crypt32.CertCloseStoreFlags)">
+            <summary>
+            The CertCloseStore function closes a certificate store handle and reduces the reference count on the store. There needs to be a corresponding call to CertCloseStore for each successful call to the CertOpenStore or CertDuplicateStore functions.
+            </summary>
+            <param name="hCertStore">Handle of the certificate store to be closed.</param>
+            <param name="dwFlags">
+            Typically, this parameter uses the default value <see cref="F:PInvoke.Crypt32.CertCloseStoreFlags.None"/>. The default is to close the store with memory remaining allocated for contexts that have not been freed. In this case, no check is made to determine whether memory for contexts remains allocated.
+            Set flags can force the freeing of memory for all of a store's certificate, certificate revocation list (CRL), and certificate trust list (CTL) contexts when the store is closed. Flags can also be set that check whether all of the store's certificate, CRL, and CTL contexts have been freed.
+            </param>
+            <returns>
+            If the function succeeds, the return value is TRUE.
+            If the function fails, the return value is FALSE. For extended error information, call GetLastError.
+            If <see cref="F:PInvoke.Crypt32.CertCloseStoreFlags.CERT_CLOSE_STORE_CHECK_FLAG"/> is not set or if it is set and all contexts associated with the store have been freed, the return value is TRUE.
+            If <see cref="F:PInvoke.Crypt32.CertCloseStoreFlags.CERT_CLOSE_STORE_CHECK_FLAG"/> is set and memory for one or more contexts associated with the store remains allocated, the return value is FALSE. The store is always closed even when the function returns FALSE. For details, see Remarks.
+            GetLastError is set to CRYPT_E_PENDING_CLOSE if memory for contexts associated with the store remains allocated. Any existing value returned by GetLastError is preserved unless <see cref="F:PInvoke.Crypt32.CertCloseStoreFlags.CERT_CLOSE_STORE_CHECK_FLAG"/> is set.
+            </returns>
+        </member>
+        <member name="M:PInvoke.Crypt32.CryptAcquireCertificatePrivateKey(System.IntPtr,PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags,System.IntPtr,System.Runtime.InteropServices.SafeHandle@)">
+            <summary>
+            Obtains the private key for a certificate. This function is used to obtain access to a user's private key when the user's certificate is available, but the handle of the user's key container is not available. This function can only be used by the owner of a private key and not by any other user.
+            If a CSP handle and the key container containing a user's private key are available, the CryptGetUserKey function should be used instead.
+            </summary>
+            <param name="pCert">The address of a CERT_CONTEXT structure that contains the certificate context for which a private key will be obtained.</param>
+            <param name="dwFlags">A set of flags that modify the behavior of this function. This can be zero or a combination of one or more of <see cref="T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags"/> values.</param>
+            <param name="pvParameters">
+            If the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is set, then this is the address of an HWND. If the <see cref="F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is not set, then this parameter must be NULL.
+            Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  This parameter was named pvReserved and reserved for future use and must be NULL.
+            </param>
+            <param name="cryptHandle">
+            Receives a safe handle to either CNG key handle of type NCRYPT_KEY_HANDLE or CryptoAPI provider handle of type HCRYPTPROV.
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero.
+            </returns>
+        </member>
+        <member name="M:PInvoke.Crypt32.CertGetCertificateContextProperty(System.IntPtr,PInvoke.Crypt32.CERT_PROP_ID,System.IntPtr,System.Int32@)">
+            <summary>
+            The CertGetCertificateContextProperty function retrieves the information contained in an extended property of a certificate context.
+            </summary>
+            <param name = "pCertContext">A pointer to the CERT_CONTEXT structure of the certificate that contains the property to be retrieved.</param>
+            <param name = "dwPropId">The property to be retrieved.</param>
+            <param name = "pvData">
+            A pointer to a buffer to receive the data as determined by dwPropId
+            Structures pointed to by members of a structure returned are also returned following the base structure. Therefore, the size contained in pcbData often exceeds the size of the base structure.
+            </param>
+            <param name = "pcbData">
+            A pointer to a DWORD value that specifies the size, in bytes, of the buffer pointed to by the pvData parameter.
+            When the function returns, the DWORD value contains the number of bytes to be stored in the buffer.
+            </param>
+            <returns>
+            If the function succeeds, the function returns TRUE.
+            If the function fails, it returns FALSE.
+            </returns>
+        </member>
+        <member name="M:PInvoke.Crypt32.CryptAcquireCertificatePrivateKey(System.IntPtr,PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags,System.IntPtr,System.IntPtr@,System.UInt32@,System.Boolean@)">
+            <summary>
+            Obtains the private key for a certificate. This function is used to obtain access to a user's private key when the user's certificate is available, but the handle of the user's key container is not available. This function can only be used by the owner of a private key and not by any other user.
+            If a CSP handle and the key container containing a user's private key are available, the CryptGetUserKey function should be used instead.
+            </summary>
+            <param name = "pCert">The address of a CERT_CONTEXT structure that contains the certificate context for which a private key will be obtained.</param>
+            <param name = "dwFlags">A set of flags that modify the behavior of this function. This can be zero or a combination of one or more of <see cref = "T:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags"/> values.</param>
+            <param name = "pvParameters">
+            If the <see cref = "F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is set, then this is the address of an HWND. If the <see cref = "F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG"/> is not set, then this parameter must be NULL.
+            Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  This parameter was named pvReserved and reserved for future use and must be NULL.
+            </param>
+            <param name = "phCryptProvOrNCryptKey">
+            The address of an HCRYPTPROV_OR_NCRYPT_KEY_HANDLE variable that receives the handle of either the CryptoAPI provider or the CNG key. If the <paramref name = "pdwKeySpec"/> variable receives the <see cref = "F:PInvoke.Crypt32.CERT_NCRYPT_KEY_SPEC"/> flag, this is a CNG key handle of type NCRYPT_KEY_HANDLE; otherwise, this is a CryptoAPI provider handle of type HCRYPTPROV.
+            For more information about when and how to release this handle, see the description of the pfCallerFreeProvOrNCryptKey parameter.
+            </param>
+            <param name = "pdwKeySpec">The address of a DWORD variable that receives additional information about the key.</param>
+            <param name = "pfCallerFreeProvOrNCryptKey">
+            The address of a BOOL variable that receives a value that indicates whether the caller must free the handle returned in the <paramref name = "phCryptProvOrNCryptKey"/> variable.
+            This receives FALSE if any of the following is true:
+            - Public key acquisition or comparison fails.
+            - The <paramref name = "dwFlags"/> parameter contains the <see cref = "F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_CACHE_FLAG"/> flag.
+            - The <paramref name = "dwFlags"/> parameter contains the <see cref = "F:PInvoke.Crypt32.CryptAcquireCertificatePrivateKeyFlags.CRYPT_ACQUIRE_USE_PROV_INFO_FLAG"/> flag, the certificate context property is set to <see cref = "F:PInvoke.Crypt32.CERT_PROP_ID.CERT_KEY_PROV_INFO_PROP_ID"/> with the <see cref = "T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> structure, and the <paramref name = "dwFlags"/> member of the <see cref = "T:PInvoke.Crypt32.CRYPT_KEY_PROV_INFO"/> structure is set to CERT_SET_KEY_CONTEXT_PROP_ID.
+            If this variable receives FALSE, the calling application must not release the handle returned in the <paramref name = "phCryptProvOrNCryptKey"/> variable.
+            The handle will be released on the last free action of the certificate context.
+            If this variable receives TRUE, the caller is responsible for releasing the handle returned in the <paramref name = "phCryptProvOrNCryptKey"/> variable.
+            If the <paramref name = "pdwKeySpec"/> variable receives the <see cref = "F:PInvoke.Crypt32.CERT_NCRYPT_KEY_SPEC"/> flag, the handle must be released by passing it to the NCryptFreeObject function;
+            otherwise, the handle is released by passing it to the CryptReleaseContext function.
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero.
+            </returns>
+            <devremarks>
+            This is private because it returns an <see cref = "T:System.IntPtr"/> for the handle
+            and we don't expose the release methods publicly.
+            A helper method strongly types it as either of two <see cref = "T:System.Runtime.InteropServices.SafeHandle"/> types.
+            </devremarks>
+        </member>
+    </members>
+</doc>
